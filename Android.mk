@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),caf-msm8996)
 ifeq ($(call my-dir),$(call project-path-for,qcom-display))
 
 sdm-libs := sdm/libs
@@ -22,4 +23,5 @@ ifneq ($(filter msm% apq%,$(TARGET_BOARD_PLATFORM)),)
 endif
 endif
 
+endif
 endif
